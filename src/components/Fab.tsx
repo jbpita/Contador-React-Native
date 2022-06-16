@@ -10,7 +10,7 @@ interface Props {
 const Fab = ({ title, onPress, position = 'bl' }: Props) => {
 
     const ios = () => {
-        <TouchableOpacity
+        return <TouchableOpacity
             activeOpacity={0.5}
             style={[
                 style.fabLocation,
@@ -97,4 +97,4 @@ const style = StyleSheet.create({
         alignSelf: 'center'
     }
 })
-export default Fab
+export default Fab;
